@@ -3,17 +3,17 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>{% block title %}Wildlife Transfer Parameter DB{% endblock %}</title>
+    <title>{% block title %}FREDERICA{% endblock %}</title>
     <link rel="stylesheet" href="{% static 'css/styles.css' %}">
     {% block extra_css %}{% endblock %}
 </head>
 <body>
     <header>
         <nav class="top-menu">
-            <h1>Wildlife Transfer Parameter Database</h1>
+            <h1>FREDERICA</h1>
             <ul>
-                {% block dashboard_link %}<li><a href="{% url 'dashboard' %}">Dashboard</a></li>{% endblock %}
-                {% block logout_link %}<li><a href="{% url 'logout' %}">Logout</a></li>{% endblock %}
+                {% block dashboard_link %}<li><a href="{% url 'login' %}">Dashboard</a></li>{% endblock %}
+                {% block logout_link %}<li><a href="{% url 'login' %}">Logout</a></li>{% endblock %}
             </ul>
         </nav>
     </header>
@@ -24,11 +24,11 @@
 
     <footer>
         <div class="footer-links">
-            <a href="{% url 'privacy_policy' %}">Privacy policy</a>
+            <a href="{% url 'login' %}">Privacy policy</a>
             <span class="footer-bullet">&bull;</span>
-            <a href="{% url 'legal_disclaimer' %}">Legal Disclaimer</a>
+            <a href="{% url 'login' %}">Legal Disclaimer</a>
             <span class="footer-bullet">&bull;</span>
-            <a href="{% url 'contact' %}">Get Help</a>
+            <a href="{% url 'login' %}">Get Help</a>
         </div>
     </footer>
 </body>
